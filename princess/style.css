@@ -1,0 +1,120 @@
+/* Apply font everywhere */
+* {
+    font-family: 'Baloo 2', cursive;
+    box-sizing: border-box;
+}
+
+/* Page layout */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe6f0, #fff0f5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* IMPORTANT for bouncing emojis */
+    overflow-y: auto; /* ensures vertical scroll is enabled */
+
+}
+
+/* Title */
+h1 {
+    font-size: 4em;
+    color: #ff4d88;
+    margin-top: -20px;   /* raises the title */
+    margin-bottom: 25px;
+    text-align: center;   /* optional, center it */
+}
+
+
+/* Buttons */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.cute-btn {
+    font-size: 20px;
+    padding: 18px 32px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    background: #ff80aa;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.cute-btn:hover {
+    transform: scale(1.08);
+    background: #ff4d88;
+}
+
+/* Content area */
+#content {
+    font-size: 24px;
+    max-width: 650px;
+}
+
+/* Photos */
+img {
+    width: 400px;
+    border-radius: 18px;
+    margin: 10px;
+}
+
+/* Caption */
+.caption {
+    font-size: 28px;
+    color: #ff4d88;
+    font-weight: bold;
+}
+
+/* 💖 EMOJI STYLE (ONLY THIS PART MOVES) */
+.floating-emoji {
+    position: fixed;
+    font-size: 90px; /* BIG EMOJIS */
+    pointer-events: none;
+    z-index: 9999;
+    user-select: none;
+}
+.bio-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff0f5;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin-top: 20px;
+}
+
+.bio-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 3px solid #ff69b4;
+}
+
+.bio-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bio-details h2 {
+  margin: 0;
+  color: #ff1493;
+}
+
+.bio-details p {
+  margin: 0;
+  color: #333;
+}
+
